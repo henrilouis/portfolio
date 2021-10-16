@@ -1,4 +1,10 @@
 {
   "arrowParens": "avoid",
-  "semi": false
+  "semi": false,
+  "singleQuote":true,
+  "htmlWhitespaceSensitivity": ignore,
+  "jsxBracketSameLine": true,
+  "trailingComma": all,
+  "printWidth": 80,
+  "proseWrap": always
 }
