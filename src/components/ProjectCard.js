@@ -1,8 +1,7 @@
 import React from 'react'
 
-const ProjectCard = (props) => {
-
-  return(
+const ProjectCard = props => {
+  return (
     <main>
       <title>Project title - Henri Schröter</title>
       <h1>Project title</h1>
@@ -10,4 +9,4 @@ const ProjectCard = (props) => {
   )
 }
 
-export default ProjectCard;
+export default ProjectCard
