@@ -1,13 +1,21 @@
 import React from 'react'
-import { graphql } from 'gatsby'
+import { Link, graphql } from 'gatsby'
 import { MDXRenderer } from 'gatsby-plugin-mdx'
+import { GatsbyImage, getImage } from 'gatsby-plugin-image'
 
 const Project = ({ data }) => {
+
+  const heroImage = getImage(data.mdx.frontmatter.hero_image)
+
   return (
     <main>
       <title>{data.mdx.frontmatter.title} - Henri Schröter</title>
+      <Link to="/">Back</Link>
+      <GatsbyImage 
+        image={heroImage}
+        alt={data.mdx.frontmatter.hero_image_alt}
+      />
       <h1>{data.mdx.frontmatter.title}</h1>
-      <p>{data.mdx.frontmatter.date}</p>
       <MDXRenderer>
         {data.mdx.body}
       </MDXRenderer>
@@ -20,7 +28,12 @@ export const query = graphql`
     mdx(id: {eq: $id}) {
       frontmatter {
         title
-        date(formatString: "MMMM D, YYYY")
+        hero_image_alt
+        hero_image {
+          childImageSharp {
+            gatsbyImageData
+          }
+        }
       }
       body
     }

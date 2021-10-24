@@ -14,4 +14,46 @@
 body {
   font-family: 'Playfair display', serif;
   font-family: 'Open Sans', sans-serif;
+  padding: 0;
+  margin: 0;
+  font-size: 20px;
+  color: var(--font-color);
+}
+
+h1,
+h2,
+h3,
+h4 {
+  color: var(--title-color);
+}
+
+h1 {
+  font-size: 2rem;
+}
+
+.font-weight-bold {
+  font-weight: 700;
+}
+
+.font-weight-light {
+  font-weight: 300;
+}
+
+.font-type-serif {
+  font-family: 'Playfair display', serif;
+}
+
+main {
+  max-width: 1200px;
+  margin: auto;
+  padding: 10rem 2rem 4rem 2rem;
+}
+
+header.hero {
+  padding-right:25%;
+  h1 {
+    span.font-type-serif {
+      font-size: 0.7em;
+    }
+  }
 }
