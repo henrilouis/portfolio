@@ -21,9 +21,8 @@ const Home = ({ data }) => {
           </h1>
           <p>
             I work with multidisciplinary teams to create products that meet
-            user and business goals. I'm looking for just the right amount of
-            functionality that's given the appropriate attention to be usable
-            and beautiful.
+            user and business goals. I try to find the amount of functionality
+            that's given the appropriate attention to be usable and beautiful.
           </p>
           <p>
             Currently employed at Philips Design I lead a team creating digital
@@ -36,11 +35,11 @@ const Home = ({ data }) => {
       <section id="projects">
         {data.allMdx.nodes.map(node => (
           <article key={node.id}>
-            <h2>
-              {node.frontmatter.title}
-            </h2>
+            <h2>{node.frontmatter.title}</h2>
             <p>Summary</p>
-            <button><Link to={`${node.slug}`}>Read more</Link></button>
+            <button>
+              <Link to={`${node.slug}`}>Read more</Link>
+            </button>
           </article>
         ))}
       </section>
