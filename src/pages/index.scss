@@ -18,6 +18,12 @@ body {
   margin: 0;
   font-size: 20px;
   color: var(--font-color);
+  line-height:2em;
+}
+
+button{
+  height:2.5rem;
+
 }
 
 h1,
@@ -28,7 +34,7 @@ h4 {
 }
 
 h1 {
-  font-size: 2rem;
+  font-size: 3rem;
 }
 
 .font-weight-bold {
@@ -43,6 +49,10 @@ h1 {
   font-family: 'Playfair display', serif;
 }
 
+.font-type-sans{
+  font-family: 'Open Sans', sans-serif;
+}
+
 main {
   max-width: 1200px;
   margin: auto;
@@ -52,8 +62,13 @@ main {
 header.hero {
   padding-right:25%;
   h1 {
+    line-height: 1em;
     span.font-type-serif {
       font-size: 0.7em;
+    }
+
+    span.font-type-sans{
+      letter-spacing: -2px;
     }
   }
 }

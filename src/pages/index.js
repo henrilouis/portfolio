@@ -12,8 +12,8 @@ const Home = ({ data }) => {
       <section>
         <header className="hero">
           <h1>
-            <span className="font-weight-bold">I'm HENRI</span>{' '}
-            <span className="font-weight-light">SCHRÖTER,</span>
+            <span className="font-weight-bold font-type-sans">I'm HENRI</span>{' '}
+            <span className="font-weight-light font-type-sans">SCHRÖTER,</span>
             <br />
             <span className="font-type-serif font-weight-light">
               a product designer
@@ -21,13 +21,11 @@ const Home = ({ data }) => {
           </h1>
           <p>
             I work with multidisciplinary teams to create products that meet
-            user and business goals. I try to find the amount of functionality
-            that's given the appropriate attention to be usable and beautiful.
+            user and business goals. I try to make things simple, usable and beautiful.
           </p>
           <p>
-            Currently employed at Philips Design I lead a team creating digital
-            products with the goal of making life a little easier for healthcare
-            providers.
+            Currently I'm employed at Philips Design where I lead a team creating digital
+            products to make the life of healthcare providers a little bit easier.
           </p>
         </header>
       </section>
