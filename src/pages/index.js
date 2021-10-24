@@ -21,11 +21,13 @@ const Home = ({ data }) => {
           </h1>
           <p>
             I work with multidisciplinary teams to create products that meet
-            user and business goals. I try to make things simple, usable and beautiful.
+            user and business goals. I try to make things simple, usable and
+            beautiful.
           </p>
           <p>
-            Currently I'm employed at Philips Design where I lead a team creating digital
-            products to make the life of healthcare providers a little bit easier.
+            Currently I'm employed at Philips Design where I lead a team
+            creating digital products to make the life of healthcare providers a
+            little bit easier.
           </p>
         </header>
       </section>
