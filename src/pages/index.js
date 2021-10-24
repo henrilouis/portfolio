@@ -37,8 +37,10 @@ const Home = ({ data }) => {
         {data.allMdx.nodes.map(node => (
           <article key={node.id}>
             <h2>
-              <Link to={`${node.slug}`}>{node.frontmatter.title}</Link>
+              {node.frontmatter.title}
             </h2>
+            <p>Summary</p>
+            <button><Link to={`${node.slug}`}>Read more</Link></button>
           </article>
         ))}
       </section>
