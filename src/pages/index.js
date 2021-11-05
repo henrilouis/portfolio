@@ -20,9 +20,8 @@ const Home = ({ data }) => {
             </span>
           </h1>
           <p>
-            I work with multidisciplinary teams to create products that meet
-            user and business goals. I try to make things simple, usable and
-            beautiful.
+            I work with multidisciplinary teams to create simple and usable
+            products that meet user and business goals.
           </p>
           <p>
             Currently I'm employed at Philips Design where I lead a team
