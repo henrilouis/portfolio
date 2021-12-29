@@ -1,15 +1,14 @@
 import React from 'react'
-import { Link } from 'gatsby'
 // import { StaticImage } from 'gatsby-plugin-image'
 import { graphql } from 'gatsby'
-import PageHeader from '../components/PageHeader'
 import ProjectCard from '../components/ProjectCard'
 import './index.scss'
+import SiteTitle from '../components/SiteTitle'
 
 const Home = ({ data }) => {
   return (
     <main>
-      <PageHeader />
+      <SiteTitle />
       <section className='wrap'>
         <header className='intro'>
           <h1>
@@ -17,7 +16,7 @@ const Home = ({ data }) => {
             <span className='font-weight-light font-type-sans'>SCHRÖTER,</span>
             <br />
             <span className='font-type-serif font-weight-light'>
-              a product designer
+              a user experience designer
             </span>
           </h1>
           <p>
@@ -37,7 +36,6 @@ const Home = ({ data }) => {
         ))}
       </section>
 
-      {/* <Link to="/404">404 page</Link> */}
       {/* <StaticImage src="https://picsum.photos/1600/1000" alt="image" /> */}
     </main>
   )

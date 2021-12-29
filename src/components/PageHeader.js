@@ -1,19 +1,16 @@
 import React from 'react'
-import { useStaticQuery, graphql } from 'gatsby'
+import { Link } from 'gatsby'
+import './PageHeader.scss'
 
-const PageHeader = props => {
-  const data = useStaticQuery(graphql`
-    query MyQuery {
-      site {
-        siteMetadata {
-          title
-        }
-      }
-    }
-  `)
+const PageHeader = () => {
   return (
     <header>
-      <title>{data.site.siteMetadata.title}</title>
+      <div className='back'>
+        <Link to='/'>
+          <span className='font-weight-bold'>HENRI</span>{' '}
+          <span className='font-weight-light'>SCHRÖTER</span>
+        </Link>
+      </div>
     </header>
   )
 }

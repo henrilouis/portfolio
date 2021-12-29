@@ -1,7 +1,8 @@
 import React from 'react'
-import { Link, graphql } from 'gatsby'
+import { graphql } from 'gatsby'
 import { MDXRenderer } from 'gatsby-plugin-mdx'
 import { GatsbyImage, getImage } from 'gatsby-plugin-image'
+import PageHeader from '../components/PageHeader'
 import './project.scss'
 
 const Project = ({ data }) => {
@@ -9,14 +10,7 @@ const Project = ({ data }) => {
 
   return (
     <>
-      <header>
-        <div className='back'>
-          <Link to='/'>
-            <span className='font-weight-bold'>HENRI</span>{' '}
-            <span className='font-weight-light'>SCHRÖTER</span>
-          </Link>
-        </div>
-      </header>
+      <PageHeader />
       <main>
         <article className='project'>
           <header className='wrap'>
