@@ -3,19 +3,20 @@ import { Link } from 'gatsby'
 // import { StaticImage } from 'gatsby-plugin-image'
 import { graphql } from 'gatsby'
 import PageHeader from '../components/PageHeader'
+import ProjectCard from '../components/ProjectCard'
 import './index.scss'
 
 const Home = ({ data }) => {
   return (
-    <main className="home">
+    <main>
       <PageHeader />
-      <section>
-        <header className="hero">
+      <section className='wrap'>
+        <header className='intro'>
           <h1>
-            <span className="font-weight-bold font-type-sans">I'm HENRI</span>{' '}
-            <span className="font-weight-light font-type-sans">SCHRÖTER,</span>
+            <span className='font-weight-bold font-type-sans'>I'm HENRI</span>{' '}
+            <span className='font-weight-light font-type-sans'>SCHRÖTER,</span>
             <br />
-            <span className="font-type-serif font-weight-light">
+            <span className='font-type-serif font-weight-light'>
               a product designer
             </span>
           </h1>
@@ -30,16 +31,9 @@ const Home = ({ data }) => {
           </p>
         </header>
       </section>
-
-      <section id="projects">
+      <section id='projects'>
         {data.allMdx.nodes.map(node => (
-          <article key={node.id}>
-            <h2>{node.frontmatter.title}</h2>
-            <p>Summary</p>
-            <button>
-              <Link to={`${node.slug}`}>Read more</Link>
-            </button>
-          </article>
+          <ProjectCard key={node.id} node={node} />
         ))}
       </section>
 
@@ -51,10 +45,16 @@ const Home = ({ data }) => {
 
 export const query = graphql`
   query {
-    allMdx(sort: { fields: frontmatter___date, order: DESC }) {
+    allMdx(sort: { fields: frontmatter___date, order: ASC }) {
       nodes {
         frontmatter {
           title
+          summary
+          thumbnail {
+            childImageSharp {
+              gatsbyImageData(width: 600, height: 600)
+            }
+          }
         }
         id
         slug

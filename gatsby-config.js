@@ -16,18 +16,19 @@ module.exports = {
     `gatsby-transformer-sharp`,
     `gatsby-remark-images`,
     {
-      resolve:`gatsby-plugin-mdx`,
+      resolve: `gatsby-plugin-mdx`,
       options: {
-        gatsbyRemarkPlugins:[
+        gatsbyRemarkPlugins: [
           {
-            resolve:`gatsby-remark-images`,
+            resolve: `gatsby-remark-images`,
             options: {
-              maxWidth:1200,
-              linkImagesToOriginal:false
-            }
-          }
-        ]
-      }
+              maxWidth: 1200,
+              linkImagesToOriginal: false,
+              quality: 80,
+            },
+          },
+        ],
+      },
     },
     {
       resolve: `gatsby-source-filesystem`,
@@ -35,7 +36,8 @@ module.exports = {
         name: `projects`,
         path: `${__dirname}/content/projects`,
       },
-    },{
+    },
+    {
       resolve: "gatsby-plugin-page-creator",
       options: {
         path: `${__dirname}/content/projects`,

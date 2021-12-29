@@ -1,11 +1,25 @@
 import React from 'react'
+import { Link } from 'gatsby'
+import { GatsbyImage, getImage } from 'gatsby-plugin-image'
+import './ProjectCard.scss'
 
 const ProjectCard = props => {
   return (
-    <main>
-      <title>Project title - Henri Schröter</title>
-      <h1>Project title</h1>
-    </main>
+    <article className='project-card'>
+      <div className='meta'>
+        <h2>{props.node.frontmatter.title}</h2>
+        <p>{props.node.frontmatter.summary}</p>
+        <Link to={`${props.node.slug}`}>
+          <button>Read more</button>
+        </Link>
+      </div>
+      <div>
+        <GatsbyImage
+          image={getImage(props.node.frontmatter.thumbnail)}
+          alt={props.node.frontmatter.title}
+        />
+      </div>
+    </article>
   )
 }
 

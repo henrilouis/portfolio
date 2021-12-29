@@ -1,0 +1,16 @@
+.project-card {
+  background-color: #fff;
+  display: flex;
+  flex-direction: row;
+  > div {
+    width: 50%;
+    height: 100%;
+  }
+  .meta {
+    padding: 2rem 3rem;
+    h2 {
+      margin-top: 0;
+    }
+  }
+  margin-bottom: 4em;
+}

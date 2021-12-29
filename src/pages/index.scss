@@ -3,6 +3,11 @@
 :root {
   --title-color: #222;
   --font-color: #555;
+  --website-background: #f9f8f2;
+  --button-background: #8dbfa7;
+  --button-background-hover: #87b29c;
+  --button-background-active: #7fa792;
+  --button-font: #fff;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -18,12 +23,12 @@ body {
   margin: 0;
   font-size: 20px;
   color: var(--font-color);
-  line-height:2em;
+  line-height: 2em;
+  background-color: var(--website-background);
 }
 
-button{
-  height:2.5rem;
-
+button {
+  height: 2.5rem;
 }
 
 h1,
@@ -49,26 +54,52 @@ h1 {
   font-family: 'Playfair display', serif;
 }
 
-.font-type-sans{
+.font-type-sans {
   font-family: 'Open Sans', sans-serif;
 }
 
-main {
+.wrap {
   max-width: 1200px;
   margin: auto;
-  padding: 10rem 2rem 4rem 2rem;
+  padding: 4rem 2rem;
 }
 
-header.hero {
-  padding-right:25%;
+header.intro {
+  padding-top: 6rem;
+  padding-right: 25%;
   h1 {
     line-height: 1em;
     span.font-type-serif {
       font-size: 0.7em;
     }
 
-    span.font-type-sans{
+    span.font-type-sans {
       letter-spacing: -2px;
     }
   }
+}
+
+button {
+  background-color: var(--button-background);
+  font-size: 1rem;
+  padding: 0.5em 1em;
+  color: var(--button-font);
+  border: none;
+  border-radius: 0.2rem;
+  cursor: pointer;
+  a {
+    text-decoration: none;
+    color: var(--button-font);
+  }
+  &:hover {
+    background-color: var(--button-background-hover);
+  }
+  &:active {
+    background-color: var(--button-background-active);
+  }
+}
+
+#projects {
+  max-width: 1300px;
+  margin: auto;
 }
