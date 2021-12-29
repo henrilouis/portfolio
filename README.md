@@ -27,8 +27,9 @@ Your site is now running at `http://localhost:8000` and graphQL is running at
 
 ## Adding projects
 
-To add a project add a sub-folder to the projects folder, containing at least an
-index.mdx file.
+To add a project add a sub-folder to the
+[projects folder](https://github.com/henrilouis/portfolio/tree/main/content/projects),
+containing at least an index.mdx file.
 
 ## Building the static website
 
@@ -37,5 +38,3 @@ Building again relies on the Gatsby CLI:
 ```shell
 gatsby build
 ```
-
-The output is at x.
