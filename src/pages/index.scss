@@ -8,6 +8,8 @@
   --button-background-hover: #87b29c;
   --button-background-active: #7fa792;
   --button-font: #fff;
+  --footer-background: #444;
+  --footer-font-color: #efefef;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -23,7 +25,7 @@ body {
   margin: 0;
   font-size: 20px;
   color: var(--font-color);
-  line-height: 2em;
+  line-height: 1.8em;
   background-color: var(--website-background);
 }
 

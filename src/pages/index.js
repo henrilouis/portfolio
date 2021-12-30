@@ -4,40 +4,46 @@ import { graphql } from 'gatsby'
 import ProjectCard from '../components/ProjectCard'
 import './index.scss'
 import SiteTitle from '../components/SiteTitle'
+import Footer from '../components/Footer'
 
 const Home = ({ data }) => {
   return (
-    <main>
-      <SiteTitle />
-      <section className='wrap'>
-        <header className='intro'>
-          <h1>
-            <span className='font-weight-bold font-type-sans'>I'm HENRI</span>{' '}
-            <span className='font-weight-light font-type-sans'>SCHRÖTER,</span>
-            <br />
-            <span className='font-type-serif font-weight-light'>
-              user experience designer and developer
-            </span>
-          </h1>
-          <p>
-            I work with multidisciplinary teams to create simple and usable
-            products that meet user and business goals.
-          </p>
-          <p>
-            Currently I'm employed at Philips Experience Design where I lead a
-            team creating digital products to make the life of healthcare
-            providers a little bit easier.
-          </p>
-        </header>
-      </section>
-      <section id='projects'>
-        {data.allMdx.nodes.map(node => (
-          <ProjectCard key={node.id} node={node} />
-        ))}
-      </section>
+    <>
+      <main>
+        <SiteTitle />
+        <section className='wrap'>
+          <header className='intro'>
+            <h1>
+              <span className='font-weight-bold font-type-sans'>I'm HENRI</span>{' '}
+              <span className='font-weight-light font-type-sans'>
+                SCHRÖTER,
+              </span>
+              <br />
+              <span className='font-type-serif font-weight-light'>
+                user experience designer and developer
+              </span>
+            </h1>
+            <p>
+              I work with multidisciplinary teams to create simple and usable
+              products that meet user and business goals.
+            </p>
+            <p>
+              Currently I'm employed at Philips Experience Design where I lead a
+              team creating digital products to make the life of healthcare
+              providers a little bit easier.
+            </p>
+          </header>
+        </section>
+        <section id='projects'>
+          {data.allMdx.nodes.map(node => (
+            <ProjectCard key={node.id} node={node} />
+          ))}
+        </section>
 
-      {/* <StaticImage src="https://picsum.photos/1600/1000" alt="image" /> */}
-    </main>
+        {/* <StaticImage src="https://picsum.photos/1600/1000" alt="image" /> */}
+      </main>
+      <Footer />
+    </>
   )
 }
 
