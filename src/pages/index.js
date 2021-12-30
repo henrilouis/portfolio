@@ -16,7 +16,7 @@ const Home = ({ data }) => {
             <span className='font-weight-light font-type-sans'>SCHRÖTER,</span>
             <br />
             <span className='font-type-serif font-weight-light'>
-              a user experience designer
+              user experience designer and developer
             </span>
           </h1>
           <p>
@@ -24,9 +24,9 @@ const Home = ({ data }) => {
             products that meet user and business goals.
           </p>
           <p>
-            Currently I'm employed at Philips Design where I lead a team
-            creating digital products to make the life of healthcare providers a
-            little bit easier.
+            Currently I'm employed at Philips Experience Design where I lead a
+            team creating digital products to make the life of healthcare
+            providers a little bit easier.
           </p>
         </header>
       </section>
@@ -50,7 +50,7 @@ export const query = graphql`
           summary
           thumbnail {
             childImageSharp {
-              gatsbyImageData(width: 600, height: 600)
+              gatsbyImageData(width: 650, height: 650)
             }
           }
         }

@@ -1,9 +1,8 @@
 .project-card {
   background-color: #fff;
-  display: flex;
-  flex-direction: row;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
   > div {
-    width: 50%;
     height: 100%;
   }
   .meta {
