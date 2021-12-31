@@ -29,8 +29,8 @@ const Home = ({ data }) => {
             </p>
             <p>
               Currently I'm employed at Philips Experience Design where I lead a
-              team creating digital products to make the life of healthcare
-              providers a little bit easier.
+              team creating digital products and services to make the life of
+              healthcare providers a little bit easier.
             </p>
           </header>
         </section>

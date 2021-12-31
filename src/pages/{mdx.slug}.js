@@ -4,6 +4,7 @@ import { MDXRenderer } from 'gatsby-plugin-mdx'
 import { GatsbyImage, getImage } from 'gatsby-plugin-image'
 import PageHeader from '../components/PageHeader'
 import './project.scss'
+import Footer from '../components/Footer'
 
 const Project = ({ data }) => {
   const heroImage = getImage(data.mdx.frontmatter.hero_image)
@@ -29,6 +30,7 @@ const Project = ({ data }) => {
           </section>
         </article>
       </main>
+      <Footer />
     </>
   )
 }
