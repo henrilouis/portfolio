@@ -1,19 +1,81 @@
 ---
-title: "Data visualization"
-date: "2021-09-02"
+title: 'Data visualization'
+date: '2021-09-02'
 summary:
-  "A summary text here could span around this distance and then some more."
-hero_image: "./energy_clock_consumption_visualization_2.jpg"
-hero_image_alt: "Energy clock"
-thumbnail: "./energy_clock_consumption_visualization_2.jpg"
+  "I've been facinated by data visualization ever since stumbling upon the
+  field. If you have a cool side project idea let me know. Here's a collection
+  of products and experiments I've worked on."
+hero_image: './energy-clock-3.jpg'
+hero_image_alt: 'Energy clock'
+thumbnail: './nvision.png'
 ---
 
-A post about data vis.
+## NVISION
 
-- Clock
+The egineering agency Nspyre's big data unit was looking for a visualization
+framework to provide customers with customized and branded visualization
+dashboards.
 
-- Nvision
+As I had previous experience with visualization design, Nspyre hired me as an
+intern as part of my master thesis project to design this data visualization
+framework. I created a web-based app called Nvision based on Angular and D3 that
+allows users to create and customize their own visualization-dashboard.
 
-- iBrowse
+![NVISION](./nvision.png)
 
-![Nvision project](./nvision_information_visualization_1.jpg)
+Through iterative user-testing the product was refined, and consequently it was
+used to conduct an experimental user study with 184 participants. I tried to
+find out whether exposing users to the plumbing of an application (the green
+arrow in the image) would help them create a representative mental model and
+work more efficiently. You can play with the study setup using this
+[this link](https://henrilouis.com/webprojects/nspyre/nvision/).
+
+The result was interesting as I found the opposite; participants in the
+condition without exposed plumbing (or information flows as I've called them)
+performed worse. My hunch is that exposing especially novices to more stimuli
+will increase cognitive load and make them perform worse on the already complex
+task. Another reason to keep products simple and clean, good design seems to be
+invisible.
+
+## iBrowse
+
+![iBrowse](./ibrowse.png)
+
+This Chrome Plugin simplifies and enhances the experience of searching Chrome’s
+browsing history. Browsing behavior is visualized as a calendar heat-map,
+showing on which days what websites are visited. When entering a search term the
+corresponding days are highlighted, so you can quickly find that website you
+visited the other day.
+
+The application also shows you interesting statistics about how, when and how
+often you browse the web. Try finding your own patterns and enjoy exploring your
+history.
+
+Created in collaboration with Wouter Jansen and Ivo van Bon. You can find it in
+the
+[Chrome Webstore](https://chrome.google.com/webstore/detail/ibrowse/hcjpbkigjdnnpjmhgjnficbpkjgbmnek).
+
+## Energy clock
+
+This project was started as part of a cooperation between the energy company
+Fortum, and the KTH Stockholm. The goal was creating awareness of energy
+consumption among the general population through an ambient display in the
+living room. You can play with the
+[prototype here](http://henrilouis.com/webprojects/kth/vis/energy/).
+
+![Energy clock](./energy-clock-3.jpg)
+
+The energy clock visualizes energy consumption data of an average household to
+create this awareness. By touching the bars, the user can change between
+different visual styles. The different types of energy can be toggled by
+touching their respective icons.
+
+![Energy clock](./energy-clock-1.jpg)
+
+Finally when touching the time, the user can explore the energy consumption
+history. This visualization is best displayed on an iPad and was created for
+this type of device.
+
+![Energy clock](./energy-clock-2.jpg)
+
+Created in collaboration with Wouter Jansen and Ivo van Bon.

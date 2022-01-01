@@ -24,13 +24,14 @@ const Home = ({ data }) => {
               </span>
             </h1>
             <p>
-              I work with multidisciplinary teams to create simple and usable
-              products that meet user and business goals.
+              Creating awesome products is the thing that energizes me. I work
+              with multidisciplinary teams to create simple and usable products
+              that meet user and business goals.
             </p>
             <p>
               Currently I'm employed at Philips Experience Design where I lead a
               team creating digital products and services to make the life of
-              healthcare providers a little bit easier.
+              healthcare providers a little easier.
             </p>
           </header>
         </section>
