@@ -9,6 +9,7 @@ const Footer = () => {
         <div>LinkedIn</div>
         <div>Github</div>
         <div>henri@henrilouis.com</div>
+        <div>Fork this website on Github</div>
       </section>
     </footer>
   )
