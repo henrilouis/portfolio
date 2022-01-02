@@ -17,6 +17,14 @@ const Footer = () => {
           <span className='font-weight-light font-type-sans'>SCHRÖTER</span>
         </div>
 
+        <div className='connect'>
+          <a href='mailto:info@henrilouis.com'>
+            <button>
+              <FontAwesomeIcon icon={faEnvelope} /> Get in touch
+            </button>
+          </a>
+        </div>
+
         <div className='social'>
           <a href='https://twitter.com/henrilouis'>
             <FontAwesomeIcon icon={faTwitter} size='lg' />
@@ -28,16 +36,11 @@ const Footer = () => {
             <FontAwesomeIcon icon={faGithub} size='lg' />
           </a>
         </div>
-        <div className='connect'>
-          <a href='mailto:info@henrilouis.com'>
-            <button>
-              <FontAwesomeIcon icon={faEnvelope} /> Get in touch
-            </button>
-          </a>
-        </div>
+
         <div className='fork'>
           <a href='https://github.com/henrilouis/portfolio'>
-            <FontAwesomeIcon icon={faCodeBranch} /> Fork website on GitHub
+            <FontAwesomeIcon icon={faCodeBranch} size='lg' /> Fork this website
+            on GitHub
           </a>
         </div>
       </section>
