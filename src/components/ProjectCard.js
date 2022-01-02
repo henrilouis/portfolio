@@ -5,21 +5,20 @@ import './ProjectCard.scss'
 
 const ProjectCard = props => {
   return (
-    <article className='project-card'>
-      <div className='meta'>
+    <Link to={`${props.node.slug}`} className='component-link'>
+      <article className='project-card'>
         <h2>{props.node.frontmatter.title}</h2>
         <p>{props.node.frontmatter.summary}</p>
         <Link to={`${props.node.slug}`}>
           <button>Read more</button>
         </Link>
-      </div>
-      <div>
+
         <GatsbyImage
           image={getImage(props.node.frontmatter.thumbnail)}
           alt={props.node.frontmatter.title}
         />
-      </div>
-    </article>
+      </article>
+    </Link>
   )
 }
 

@@ -1,9 +1,13 @@
-figure.hero {
-  width: 100%;
-  padding: 0;
-  margin: 0;
-}
-
-.project .wrap {
-  max-width: 45rem;
+.project {
+  figure.hero {
+    width: 100%;
+    padding: 0;
+    margin: 0;
+  }
+  header.wrap {
+    max-width: 55rem;
+  }
+  .wrap {
+    max-width: 40rem;
+  }
 }

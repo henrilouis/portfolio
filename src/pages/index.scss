@@ -18,19 +18,18 @@
   }
 }
 
+html {
+  font-size: 20px;
+}
+
 body {
   font-family: 'Playfair display', serif;
   font-family: 'Open Sans', sans-serif;
   padding: 0;
   margin: 0;
-  font-size: 20px;
   color: var(--font-color);
   line-height: 1.8em;
   background-color: var(--website-background);
-}
-
-button {
-  height: 2.5rem;
 }
 
 h1,
@@ -41,7 +40,7 @@ h4 {
 }
 
 h1 {
-  font-size: 3rem;
+  font-size: 2.4rem;
 }
 
 h2,
@@ -52,6 +51,23 @@ h4 {
 
 p {
   margin: 1.5rem 0 1.5rem;
+}
+
+a {
+  text-decoration: none;
+  color: var(--button-background);
+  &:hover {
+    text-decoration: underline;
+    color: var(--button-background-hover);
+  }
+  &:active {
+    color: var(--button-background-active);
+  }
+}
+
+a.component-link {
+  text-decoration: none;
+  color: var(--font-color);
 }
 
 .font-weight-bold {
@@ -71,7 +87,7 @@ p {
 }
 
 .wrap {
-  max-width: 55em;
+  max-width: 55rem;
   margin: auto;
   padding: 4rem 2rem;
 }
@@ -80,6 +96,7 @@ header.intro {
   padding-top: 6rem;
   padding-bottom: 6rem;
   padding-right: 40%;
+
   h1 {
     line-height: 1em;
     span.font-type-serif {
@@ -93,12 +110,12 @@ header.intro {
 }
 
 button {
+  font-size: 0.8rem;
   background-color: var(--button-background);
-  font-size: 1rem;
-  padding: 0.5em 1em;
+  padding: 0.75em 1em;
   color: var(--button-font);
   border: none;
-  border-radius: 0.2rem;
+  border-radius: 0.2em;
   cursor: pointer;
   a {
     text-decoration: none;
@@ -113,6 +130,12 @@ button {
 }
 
 #projects {
-  max-width: 60em;
+  max-width: 59rem;
   margin: auto;
+}
+
+@media only screen and (min-width: 1200px) {
+  header.intro {
+    padding-right: 0;
+  }
 }

@@ -20,7 +20,7 @@ const Home = ({ data }) => {
               </span>
               <br />
               <span className='font-type-serif font-weight-light'>
-                user experience designer and developer
+                designer and developer
               </span>
             </h1>
             <p>
@@ -57,7 +57,7 @@ export const query = graphql`
           summary
           thumbnail {
             childImageSharp {
-              gatsbyImageData(width: 650, height: 650)
+              gatsbyImageData(aspectRatio: 1.25)
             }
           }
         }

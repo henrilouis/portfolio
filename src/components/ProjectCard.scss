@@ -1,15 +1,67 @@
 .project-card {
   background-color: #fff;
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  > div {
-    height: 100%;
+  grid-template-columns: 1fr;
+  margin-bottom: 4em;
+
+  p,
+  h2,
+  a {
+    margin: 1.5rem 2rem;
   }
-  .meta {
-    padding: 2rem 3rem;
-    h2 {
-      margin-top: 0;
+
+  h2 {
+    grid-row-start: 1;
+    grid-row-end: 1;
+  }
+
+  p {
+    margin-bottom: 0;
+  }
+
+  a {
+  }
+
+  .gatsby-image-wrapper {
+    grid-row-start: 2;
+    grid-row-end: 2;
+  }
+
+  .gatsby-image-wrapper [data-main-image] {
+    transition: all 2s;
+  }
+
+  &:hover {
+    .gatsby-image-wrapper [data-main-image] {
+      transform: scale3d(1.1, 1.1, 1.1);
+    }
+    a button {
+      background-color: var(--button-background-hover);
     }
   }
-  margin-bottom: 4em;
+}
+
+@media only screen and (min-width: 1200px) {
+  .project-card {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 76px 1fr 110px;
+
+    align-items: start;
+    h2 {
+      margin-bottom: 0;
+    }
+    p {
+      grid-row-start: 2;
+      grid-row-end: 2;
+      margin-top: 1.5rem;
+    }
+    a {
+      grid-row-start: 3;
+      grid-row-end: 3;
+    }
+    .gatsby-image-wrapper {
+      grid-row-start: 1;
+      grid-row-end: 4;
+    }
+  }
 }

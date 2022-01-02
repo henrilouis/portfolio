@@ -2,5 +2,38 @@ footer#footer {
   width: 100%;
   background-color: var(--footer-background);
   color: var(--footer-font-color);
-  min-height: 20em;
+  min-height: 20rem;
+  font-size: 0.8rem;
+
+  .wrap {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+
+    .logo {
+      font-size: 1.2rem;
+    }
+
+    .social {
+      display: flex;
+      flex-direction: row;
+      gap: 1rem;
+    }
+
+    a {
+      color: white;
+    }
+
+    .social a .svg-inline--fa {
+      color: white;
+
+      &:hover {
+        color: var(--button-background-hover);
+      }
+
+      &:active {
+        color: var(--button-background-active);
+      }
+    }
+  }
 }
