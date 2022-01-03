@@ -7,7 +7,7 @@
   p,
   h2,
   a {
-    margin: 1.75rem 2rem;
+    margin: 1.25rem 1.5rem;
   }
 
   h2 {
@@ -45,8 +45,14 @@
   .project-card {
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: 76px 1fr 110px;
-
     align-items: start;
+
+    p,
+    h2,
+    a {
+      margin: 1.75rem 2rem;
+    }
+
     h2 {
       margin-bottom: 0;
     }

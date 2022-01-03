@@ -12,6 +12,8 @@
   --footer-font-color: #efefef;
 }
 
+$text-padding: 2rem 1.5rem;
+
 @media (prefers-color-scheme: dark) {
   // :root {
   //   --font-color: #fff;
@@ -91,7 +93,7 @@ a.component-link {
 .wrap {
   max-width: 55rem;
   margin: auto;
-  padding: 4rem 2rem;
+  padding: $text-padding;
 }
 
 header.intro {
