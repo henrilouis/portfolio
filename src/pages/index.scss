@@ -42,7 +42,7 @@ h4 {
 }
 
 h1 {
-  font-size: 2.4rem;
+  font-size: 2rem;
   line-height: 1.2em;
 }
 
@@ -137,6 +137,9 @@ button {
 @media only screen and (min-width: 768px) {
   html {
     font-size: 20px;
+    h1 {
+      font-size: 2.4rem;
+    }
   }
 }
 
