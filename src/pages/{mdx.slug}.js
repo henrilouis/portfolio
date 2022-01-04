@@ -25,7 +25,7 @@ const Project = ({ data }) => {
               alt={data.mdx.frontmatter.hero_image_alt}
             />
           </figure>
-          <section className='wrap'>
+          <section className='content'>
             <MDXRenderer>{data.mdx.body}</MDXRenderer>
           </section>
         </article>
