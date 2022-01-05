@@ -20,13 +20,13 @@ const Home = ({ data }) => {
               </span>
               <br />
               <span className='font-type-serif font-weight-light'>
-                designer and developer
+                product designer and developer
               </span>
             </h1>
             <p>
-              Creating awesome products is the thing that energizes me. I work
-              with multidisciplinary teams to create simple and usable products
-              that meet user and business goals.
+              Creating awesome products makes me happy. I work with
+              multidisciplinary teams to create simple and usable products that
+              meet user and business goals.
             </p>
             <p>
               Currently I'm employed at Philips Experience Design where I lead a

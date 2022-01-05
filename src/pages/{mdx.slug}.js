@@ -26,7 +26,9 @@ const Project = ({ data }) => {
             />
           </figure>
           <section className='content'>
-            <MDXRenderer>{data.mdx.body}</MDXRenderer>
+            <div className='center-content'>
+              <MDXRenderer>{data.mdx.body}</MDXRenderer>
+            </div>
           </section>
         </article>
       </main>
