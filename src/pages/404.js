@@ -1,6 +1,6 @@
 import React from 'react'
-import Footer from '../components/Footer'
 import PageHeader from '../components/PageHeader'
+import Footer from '../components/Footer'
 
 const NotFound = () => {
   return (

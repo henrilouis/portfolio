@@ -10,5 +10,8 @@
     &:visited {
       color: var(--title-color);
     }
+    &:hover {
+      text-decoration: none;
+    }
   }
 }

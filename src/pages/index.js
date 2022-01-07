@@ -1,10 +1,10 @@
 import React from 'react'
 // import { StaticImage } from 'gatsby-plugin-image'
 import { graphql } from 'gatsby'
-import ProjectCard from '../components/ProjectCard'
-import './index.scss'
 import SiteTitle from '../components/SiteTitle'
+import ProjectCard from '../components/ProjectCard'
 import Footer from '../components/Footer'
+import './index.scss'
 
 const Home = ({ data }) => {
   return (
