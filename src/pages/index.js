@@ -24,7 +24,7 @@ const Home = ({ data }) => {
               </span>
             </h1>
             <p>
-              Creating awesome products makes me happy. I work with
+              Creating good products brings me joy and energizes me. I work with
               multidisciplinary teams to create simple and usable products that
               meet user and business goals.
             </p>
