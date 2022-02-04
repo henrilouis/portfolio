@@ -22,9 +22,9 @@ module.exports = {
           {
             resolve: `gatsby-remark-images`,
             options: {
-              maxWidth: 1200,
+              maxWidth: 1600,
               linkImagesToOriginal: false,
-              quality: 80,
+              quality: 90,
             },
           },
         ],
@@ -38,7 +38,7 @@ module.exports = {
       },
     },
     {
-      resolve: "gatsby-plugin-page-creator",
+      resolve: 'gatsby-plugin-page-creator',
       options: {
         path: `${__dirname}/content/projects`,
       },
