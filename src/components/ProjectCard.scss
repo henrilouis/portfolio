@@ -4,8 +4,8 @@
   grid-template-columns: 1fr;
   margin-bottom: 4em;
 
-  box-shadow: 0.1em 0.1em 0.5em rgb(1 1 1 / 5%);
-  border-radius: 0.4rem;
+  box-shadow: var(--card-shadow);
+  border-radius: var(--card-border-radius);
   overflow: hidden;
 
   p,

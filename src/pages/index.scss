@@ -12,6 +12,8 @@
   --button-font: #fff;
   --footer-background: #444;
   --footer-font-color: #efefef;
+  --card-border-radius: 0.4rem;
+  --card-shadow: 0.1em 0.1em 0.5em rgb(1 1 1 / 5%);
 }
 
 $text-padding: 2rem 1.5rem;
@@ -105,14 +107,24 @@ a.component-link {
 }
 
 header.intro {
-  h1 {
-    line-height: 1em;
-    span.font-type-serif {
-      font-size: 0.7em;
-    }
+  display: flex;
+  flex-direction: column;
+  .hero-image {
+    border-radius: var(--card-border-radius);
+    box-shadow: var(--card-shadow);
+    margin: auto;
+    max-width: 30rem;
+  }
+  .typography {
+    h1 {
+      line-height: 0.9em;
+      span.font-type-serif {
+        font-size: 0.6em;
+      }
 
-    span.font-type-sans {
-      letter-spacing: -2px;
+      span.font-type-sans {
+        letter-spacing: -2px;
+      }
     }
   }
 }
@@ -157,5 +169,15 @@ button {
     padding-bottom: 6rem;
     padding-left: 0;
     // padding-right: 40%;
+
+    flex-direction: row;
+    .hero-image {
+      width: 50%;
+      max-width: auto;
+    }
+    .typography {
+      width: 70%;
+      padding-left: 2rem;
+    }
   }
 }
