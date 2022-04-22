@@ -1,36 +1,39 @@
-# This workflow will do a clean installation of node dependencies, cache/restore them, build the source code and run tests across different versions of node
-# For more information see: https://help.github.com/actions/language-and-framework-guides/using-nodejs-with-github-actions
+# This workflow will build the website and upload it using ftp.
 
-name: Deploy
+name: Build and Deploy
 
 on:
   push:
     branches: [ main ]
 
 jobs:
-  build:
+  build-and-deploy:
 
     runs-on: ubuntu-latest
 
-    strategy:
-      matrix:
-        node-version: [12.x, 14.x, 16.x]
-        # See supported Node.js release schedule at https://nodejs.org/en/about/releases/
-
     steps:
-    - uses: actions/checkout@v3
-    - name: Use Node.js ${{ matrix.node-version }}
+    - name: Checkout Code
+      uses: actions/checkout@v3
+    - name: Install Node.js
       uses: actions/setup-node@v3
       with:
-        node-version: ${{ matrix.node-version }}
+        node-version: '16'
         cache: 'npm'
-    - run: npm ci
-    - run: npm run build --if-present
-    - name: 📂 Sync files
+
+    - name: Install Project Dependenceies    
+      run: npm ci
+
+    - name: Install Gatsby CLI
+      run: npm install -g gatsby-cli
+
+    - name: Build
+      run: gatsby build
+
+    - name: Upload files
       uses: SamKirkland/FTP-Deploy-Action@4.3.0
       with:
-        server: ftp.henri.tech
-        username: henri
+        server: ${{ secrets.server_url }}
+        username: ${{ secrets.ftp_user }}
         password: ${{ secrets.ftp_password }}
         local-dir: ./public/
         server-dir: public_html/
